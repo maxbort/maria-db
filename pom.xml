@@ -7,15 +7,19 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>	
-		<project.build.outputEncoding>UTF-8</project.build.outputEncoding>	
-		<maven.compiler.source>17</maven.compiler.source>
-		<maven.compiler.target>17</maven.compiler.target>
-	</properties>	
-
-
-	<modules>
-	<module>jdbc-practices</module>
-	</modules>
+	  <properties>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <project.build.outputEncoding>UTF-8</project.build.outputEncoding>
+      <maven.compiler.source>17</maven.compiler.source>   
+      <maven.compiler.target>17</maven.compiler.target>   
+   </properties>
+   
+   <dependencies>      
+      <dependency>
+          <groupId>org.mariadb.jdbc</groupId>
+          <artifactId>mariadb-java-client</artifactId>
+          <version>3.2.0</version>
+      </dependency>
+      
+   </dependencies>
 </project>
